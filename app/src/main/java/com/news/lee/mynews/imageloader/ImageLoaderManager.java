@@ -23,7 +23,7 @@ public class ImageLoaderManager {
 
     private static final int THREAD_COUNT=4;//加载图片最大启用4条线程
     private static final int PROPRITY=2;//图片加载的优先级
-    private static final int DISK_CACHE_SIZE=50*1024;//最多缓存的图片数。
+    private static final int DISK_CACHE_SIZE=50*1024*50;//最多缓存的图片数。
     private static final int CONNECTION_TIME_OUT=5*1000;//超时时间
     private static final int READ_TIME_OUT=30*1000;//读取的超时时间。
 

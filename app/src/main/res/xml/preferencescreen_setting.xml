@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/setting_normal">
+
+        <CheckBoxPreference
+            android:title="@string/shengliuliang"
+            android:summary="@string/shengliuliang_summary"
+            android:defaultValue="false"
+            android:key="@string/shengliuliang_key"
+            ></CheckBoxPreference>
+
+        <SwitchPreference
+            android:title="@string/day_night"
+            android:summaryOn="@string/summay_on"
+            android:summaryOff="@string/summary_off"
+            android:defaultValue="false"
+            android:key="@string/day_night_key"
+            >
+        </SwitchPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/setting_other">
+
+        <Preference
+            android:title="@string/clear_cache"
+            android:key="@string/clear_cache_key"
+            ></Preference>
+
+        <Preference
+            android:title="@string/project_add"
+            android:key="@string/project_key"
+            android:summary="https://github.com/SummerLeeK/MyNew">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/SummerLeeK/MyNew"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/setting_feed"
+        ></PreferenceCategory>
+
+    <Preference
+        android:title="@string/feedback"
+        android:key="@string/feedback_key"
+        android:summary="@string/summary_feed">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="mailto:greek9k@gmail.com?subject=MyNewsAppFeedback"/>
+    </Preference>
+
+</PreferenceScreen>

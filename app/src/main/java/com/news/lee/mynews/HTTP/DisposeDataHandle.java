@@ -7,12 +7,12 @@ package com.news.lee.mynews.HTTP;
 public class DisposeDataHandle {
 
     public DisposeDataListener mListener = null;
-    public Class<?> mClasss =null;
+    public Class<?> mClass =null;
 
     public DisposeDataHandle(DisposeDataListener mListener){ this.mListener=mListener;}
 
-    public DisposeDataHandle(DisposeDataListener mListener,Class<?> mClasss){
-        this.mClasss=mClasss;
+    public DisposeDataHandle(DisposeDataListener mListener,Class<?> mClass){
+        this.mClass=mClass;
         this.mListener=mListener;
     }
 }
